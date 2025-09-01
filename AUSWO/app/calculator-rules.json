@@ -1,0 +1,63 @@
+{
+  "meta": { "name": "Skilled Points Rules", "version": "v1", "updated_at": "2025-08-30" },
+
+  "age": [
+    { "min": 18, "max": 24, "points": 25 },
+    { "min": 25, "max": 32, "points": 30 },
+    { "min": 33, "max": 39, "points": 25 },
+    { "min": 40, "max": 44, "points": 15 }
+  ],
+
+  "english": {
+    "ielts_overall": [
+      { "min": 7.0, "max": 7.99, "points": 10 },
+      { "min": 8.0, "max": 9.0,  "points": 20 }
+    ],
+    "ielts_bands": [
+      { "min": 7.0, "points": 10 },
+      { "min": 8.0, "points": 20 }
+    ],
+    "pte_overall": [
+      { "min": 65, "max": 78, "points": 10 },
+      { "min": 79, "max": 90, "points": 20 }
+    ],
+    "pte_bands": [
+      { "min": 65, "points": 10 },
+      { "min": 79, "points": 20 }
+    ]
+  },
+
+  "education": {
+    "mapping": { "phd": 20, "master": 15, "bachelor": 15, "diploma": 10, "trade": 10 }
+  },
+
+  "work_experience": {
+    "mode": "sum_cap",
+    "cap_points": 20,
+    "overseas": [
+      { "min": 3, "max": 4, "points": 5 },
+      { "min": 5, "max": 7, "points": 10 },
+      { "min": 8, "max": 30, "points": 15 }
+    ],
+    "australia": [
+      { "min": 1, "max": 2, "points": 5 },
+      { "min": 3, "max": 4, "points": 10 },
+      { "min": 5, "max": 30, "points": 15 }
+    ]
+  },
+
+  "australia_study": { "points": 5, "regional_bonus": 5 },
+
+  "professional_year": { "points": 5 },
+
+  "naati": { "points": 5 },
+
+  "partner": {
+    "single": 10,
+    "skilled": 10,
+    "english_only": 5,
+    "none": 0
+  },
+
+  "state_nomination": { "190": 5, "491": 15 }
+}
